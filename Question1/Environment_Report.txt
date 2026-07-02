@@ -1,0 +1,15 @@
+Environment and User account Report
+
+
+current user is "allpowerful" and has access to wheel,users,networkmanager groups
+
+current shell being used is bash
+
+current working directory is "CLIS_StaffGradedAssignment1/Question1" in the /home directory of user "allpowerful"
+
+upon listing all the files and directories in current working directory we see that it only has the "ss" directory
+
+upon establishing connection with Steam servers, packets are being successfully transmitted and received, this shows that we have a positive network connection
+
+
+END OF REPORT
