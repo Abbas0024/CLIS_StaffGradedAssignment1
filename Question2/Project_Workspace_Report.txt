@@ -1,0 +1,16 @@
+Secure Project Workspace Report 
+
+
+started out with creating the workspace structure with the directories - ProjectWorkspace
+                                                                           Files
+						                           Documentation
+
+then checked the permissions that ProjectWorkspace/ had and it had default permissions given when directory was created
+so changed permissions using chmod 700 so that only "owner" can have read,write,execute access and group and others have no permission
+
+ownership details of ProjectWorkspace - Owner: current user 
+                                        Group: current user group
+
+0022 is the default file permission settings for newly created files and directories
+
+restrictive permissions protect the workspace so only the owner can access it

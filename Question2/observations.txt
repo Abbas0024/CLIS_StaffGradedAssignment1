@@ -1,0 +1,9 @@
+mkdir: used to create the various directories for the secure project workspace
+
+ls -R: to check the workspace structure
+
+ls -ld: to check ownership and permissions of current working directory only('d')
+
+chmod 700: restricts access to specified directory
+
+umask: displays the default file permission settings for newly created files and directories
