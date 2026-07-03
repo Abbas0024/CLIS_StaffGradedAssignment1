@@ -1,0 +1,9 @@
+ping ... > ... 2> ... &: started a background process (&) and split its standard output (>) and error output (2>) into two separate files
+
+lsof -p $APP_PID: listed every file the background process was actively using
+
+ls -l /proc/$APP_PID/fd: showed how the system mapped file descriptors to the specific log files created
+
+ulimit -a: displayed system resource limits related to files, memory and processes
+
+kill $APP_PID: terminated the background process

@@ -1,0 +1,19 @@
+Files and IO Investigation Report
+
+
+Using command "lsof -p $APP_PID", I was able to observe all files currently opened by the application process
+The output listed the command name, process ID, the user running it, the file descriptor type, and the absolute path to the opened files, which included standard system libraries and our specific log files
+
+These are the file descriptor observations which I got by listing the contents of "/proc/$APP_PID/fd":
+FD 0 (stdin) was mapped to the terminal
+FD 1 (stdout) was mapped to the created file: app_output.log
+FD 2 (stderr) was mapped to the created file: app_error.log
+
+By executing the application with "> app_output.log 2> app_error.log", standard output and standard error streams were successfully separated
+
+Using "ulimit -a" command displays system resource limits related to files, memory and processes
+
+Linux manages file I/O based on the philosophy that "everything is a file," including hardware devices and network sockets. When a process opens a file, the kernel allocates a File Descriptor to track it. Every process automatically starts with three default descriptors: 0 (stdin), 1 (stdout), and 2 (stderr). The kernel maintains a table mapping these numerical descriptors to the actual inodes on the storage device, ensuring secure and organized read/write operations
+
+
+END OF REPORT
