@@ -1,0 +1,24 @@
+File System and Link Analysis Report
+
+Inode numbers of: original.txt - 30558881
+		  hardlink.txt - 30558881
+		  symboliclink.txt - 30558884
+
+Hard Link:
+Shares the same inode as the original file
+Points directly to file data
+Continues to work even if the original filename is deleted
+
+Symbolic Link
+Has its own inode
+Stores a reference to the file path
+Becomes broken if the target file is removed
+
+Upon deleting the original file, we see that hardlink.txt still works but symboliclink.txt throws an error
+
+Upon using stat command, we can see the metadata of the various files and directories in our current workind directory(see screenshot for complete metadata)
+
+We can conclude that hardlinkss act like additional names for same file data whereas symbolic links create a link between the two files or in other words - a shortcut to the orginal file's path
+
+
+END OF REPORT

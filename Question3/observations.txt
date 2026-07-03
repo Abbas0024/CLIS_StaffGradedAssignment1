@@ -1,0 +1,15 @@
+touch: used to create files
+
+echo: used to inout data into a file without opening it
+
+cat: used to display data from a file directly in the terminal
+
+ln: creates a hardlink of specified file
+
+ln -s: creates a symbolic link of specified file
+
+ls -li: shows inode numbers of all files and directories in current working directory
+
+stat: displays file metadata such as inode, permissions, ownership, filesize and timestamps
+
+rm - removes/deletes a file from system memory
