@@ -1,9 +1,9 @@
-id - this command displayed the current user's identity information
+id: this command displayed the current user's identity information
 
-echo $SHELL - this command displayed the active shell being used
+echo $SHELL: this command displayed the active shell being used
 
-pwd - this command displayed the current working directory
+pwd: this command displayed the current working directory
 
-ls -a - this command listed the files, directories, hidden ones as well in the current working directory
+ls -a: this command listed the files, directories, hidden ones as well in the current working directory
 
-ping store.steampowered.com - this command tested internet connectivity and verified network communication
+ping store.steampowered.com: this command tested internet connectivity and verified network communication
