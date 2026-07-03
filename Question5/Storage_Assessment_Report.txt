@@ -1,0 +1,28 @@
+Storage Health Assessment and Documentation
+
+
+Available storage devices(found using "lsblk") are 
+nvm0n1: main ssd used as storage with 953.9GiB space
+nvme0n1p1 - first 1GiB partition, mounted at /boot
+nvme0n1p2 - second 935.8GiB partition, is encrypted, mounted at /nix/store and /
+nvme0n1p3 - third 17GiB partition, is encrypted and is a Linux Swap partition
+
+The "df -h" command shows the actively mounted file systems
+The root partition (/) and virtual file systems (tmpfs, devtmpfs) are mounted correctly with standard parameter
+
+Disk space usage in the main root partition (/) is 48% used which leaves ample empty storage for proper functioning
+
+The "df -i" command shows that inode consumption is extremely low (6% on main root partition)
+There is no danger of the system being unable to create new files due to index node depletion
+
+Overall storage health is great and there are no partitions nearing max capacity
+
+Recommendations for improving storage utilization:
+Archiving old data
+Clearing memory of unnecessary files and directories
+Monitor disk and inode usage periodically
+Running a package cache cleaner( or for nix-os a garbage cleaner to remove old generations of the system)
+
+
+END OF REPORT
+

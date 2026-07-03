@@ -1,0 +1,13 @@
+lsblk - lists all physical storage drives, partitions, and their sizes
+
+df -h: shows mounted filesystems and disk space usage in human-readable format
+
+df -i: shows how many file index nodes (inodes) are used versus available
+
+vi <file>: opens specified file in vi text editor
+
+INSIDE vi:
+vi opens up by default in normal mode
+i: to enter insert mode to start typing in the file
+esc: to go back to normal mode so that we can write some commands
+:wq(command) - used to save the new work done, and then exit the vi editor
